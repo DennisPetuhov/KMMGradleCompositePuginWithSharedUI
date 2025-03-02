@@ -1,15 +1,16 @@
+import extensions.iosRegularFramework
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-//    id("kmp.base.config")
-    alias(libs.plugins.kotlinMultiplatform)
+
+//    alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
-
     id("android.base.config")
+    id("kmp.base.config")
 }
 
 kotlin {
@@ -18,23 +19,24 @@ kotlin {
 //        compilerOptions {
 //            jvmTarget.set(JvmTarget.JVM_11)
 //        }
+//android.base.config
     }
 
-    listOf(
-        iosX64(),
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "ComposeApp"
-            isStatic = true
-        }
-    }
+//        kmp.base.config"
+//    listOf(
+//        iosX64(),
+//        iosArm64(),
+//        iosSimulatorArm64()
+//    ).forEach { iosTarget ->
+//        iosTarget.binaries.framework {
+//            baseName = "ComposeApp"
+//            isStatic = true
+//        }
+//    }
 
 
-    
     sourceSets {
-        
+
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
@@ -50,8 +52,9 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtime.compose)
         }
     }
-}
 
+
+}
 //iosRegularFramework {
 //    baseName = "ComposeApp"
 //    isStatic = true

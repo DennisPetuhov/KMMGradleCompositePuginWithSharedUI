@@ -3,15 +3,6 @@ plugins {
 //    alias(libs.plugins.kotlinMultiplatform)
 }
 
-//kotlin {
-//    androidTarget()
-//
-//    jvm()
-//
-//    iosX64()
-//    iosArm64()
-//    iosSimulatorArm64()
-//}
 
 kotlin {
     androidTarget {
