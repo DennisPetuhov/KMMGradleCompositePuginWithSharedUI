@@ -27,18 +27,18 @@ tasks.withType<KotlinCompile>().configureEach {
     compilerOptions.jvmTarget.set(JvmTarget.fromTarget(projectJavaVersion.toString()))
 }
 
-//gradlePlugin {
-//    plugins {
-//        register("android.application.plugin") {
-//            id = "android.application.plugin"
-//            implementationClass = "io.github.dmitriy1892.conventionplugins.project.AndroidApplicationPlugin"
-//        }
-//
-//        register("android.library.plugin") {
-//            id = "android.library.plugin"
-//            implementationClass = "io.github.dmitriy1892.conventionplugins.project.AndroidLibraryPlugin"
-//        }
-//
+gradlePlugin {
+    plugins {
+        register("android.application.plugin") {
+            id = "android.application.plugin"
+            implementationClass = "project.AndroidApplicationPlugin"
+        }
+
+        register("android.library.plugin") {
+            id = "android.library.plugin"
+            implementationClass = "project.AndroidLibraryPlugin"
+        }
+
 //        register("kmp.compose.application.plugin") {
 //            id = "kmp.compose.application.plugin"
 //            implementationClass = "io.github.dmitriy1892.conventionplugins.project.KmpComposeApplicationPlugin"
@@ -68,5 +68,5 @@ tasks.withType<KotlinCompile>().configureEach {
 //            id = "kmp.ktor.plugin"
 //            implementationClass = "io.github.dmitriy1892.conventionplugins.project.KmpKtorPlugin"
 //        }
-//    }
-//}
+    }
+}

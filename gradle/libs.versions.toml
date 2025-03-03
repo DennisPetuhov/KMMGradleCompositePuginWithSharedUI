@@ -21,6 +21,9 @@ minSdk = "24"
 targetSdk = "35"
 compileSdk = "35"
 
+appVersionCode = "1"
+appVersionName = "1.0.0"
+
 
 
 [libraries]

@@ -1,12 +1,8 @@
-import extensions.iosRegularFramework
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
 
 //    alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.androidApplication)
+//    alias(libs.plugins.androidApplication)
+    id("android.application.plugin")
 //    alias(libs.plugins.composeMultiplatform)  kmp.compose.config"
 //    alias(libs.plugins.composeCompiler)  kmp.compose.config"
 //    id("android.base.config")
@@ -64,8 +60,8 @@ android {
         applicationId = "org.example.project"
 //        minSdk = libs.versions.android.minSdk.get().toInt()
 //        targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0"
+//        versionCode = 1
+//        versionName = "1.0"
     }
     packaging {
         resources {

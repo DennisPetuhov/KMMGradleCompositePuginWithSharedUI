@@ -1,19 +1,17 @@
-//package project
-//
-//import io.github.dmitriy1892.conventionplugins.base.extensions.libs
-//import org.gradle.api.Plugin
-//import org.gradle.api.Project
-//
-//class AndroidLibraryPlugin : Plugin<Project> {
-//
-//    override fun apply(target: Project) {
-//        with(target) {
-//            with(pluginManager) {
-//                apply(libs.plugins.android.library.get().pluginId)
-//                apply("android.base.config")
+package project
+
+import extensions1.libs
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+
+class AndroidLibraryPlugin : Plugin<Project> {
+    override fun apply(target: Project) {
+        with(target) {
+            with(pluginManager) {
+                apply(libs.plugins.androidLibrary.get().pluginId)
+                apply("android.base.config")
 //                apply("android.base.test.config")
-//            }
-//        }
-//    }
-//
-//}
+            }
+        }
+    }
+}

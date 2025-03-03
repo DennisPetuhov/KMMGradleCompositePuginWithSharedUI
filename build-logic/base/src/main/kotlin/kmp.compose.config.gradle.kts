@@ -1,4 +1,4 @@
-import extensions.libs
+import extensions1.libs
 
 plugins {
     id("org.jetbrains.kotlin.plugin.compose")

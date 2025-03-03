@@ -1,7 +1,7 @@
-import extensions.androidConfig
-import extensions.kotlinJvmCompilerOptions
-import extensions.libs
-import extensions.projectJavaVersion
+import extensions1.androidConfig
+import extensions1.kotlinJvmCompilerOptions
+import extensions1.libs
+import extensions1.projectJavaVersion
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 androidConfig {

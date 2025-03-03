@@ -1,4 +1,4 @@
-package extensions
+package extensions1
 
 import org.gradle.api.Project
 import org.jetbrains.kotlin.gradle.plugin.KotlinDependencyHandler

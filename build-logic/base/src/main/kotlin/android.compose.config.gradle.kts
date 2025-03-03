@@ -1,4 +1,4 @@
-import extensions.androidConfig
+import extensions1.androidConfig
 
 plugins {
     id("android.base.config")

@@ -1,4 +1,4 @@
-package extensions
+package extensions1
 
 import org.gradle.api.artifacts.MinimalExternalModuleDependency
 import org.gradle.api.provider.Provider
