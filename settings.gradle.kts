@@ -3,6 +3,7 @@ rootProject.name = "CompositeWithSharedUI"
 
 pluginManagement {
     includeBuild("build-logic/base")
+    includeBuild("build-logic/project")
     repositories {
         google {
             mavenContent {

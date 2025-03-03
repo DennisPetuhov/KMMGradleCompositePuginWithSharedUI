@@ -7,9 +7,10 @@ plugins {
 
 //    alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
-    alias(libs.plugins.composeMultiplatform)
-    alias(libs.plugins.composeCompiler)
-    id("android.base.config")
+//    alias(libs.plugins.composeMultiplatform)  kmp.compose.config"
+//    alias(libs.plugins.composeCompiler)  kmp.compose.config"
+//    id("android.base.config")
+    id("kmp.compose.config")
     id("kmp.base.config")
 }
 
@@ -52,13 +53,8 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtime.compose)
         }
     }
-
-
 }
-//iosRegularFramework {
-//    baseName = "ComposeApp"
-//    isStatic = true
-//}
+
 
 android {
     namespace = "org.example.project"

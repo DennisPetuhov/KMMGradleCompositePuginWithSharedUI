@@ -1,6 +1,7 @@
 import java.net.URI
 
 pluginManagement {
+
     repositories {
         google()
         gradlePluginPortal()
@@ -25,6 +26,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "base"
-
-include(":base")
+rootProject.name = "project"
+includeBuild("../base")

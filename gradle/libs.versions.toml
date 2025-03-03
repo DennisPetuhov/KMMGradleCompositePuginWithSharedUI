@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.2"
+agp = "8.8.1"
 android-compileSdk = "34"
 android-minSdk = "24"
 android-targetSdk = "34"
@@ -15,6 +15,7 @@ compose-multiplatform = "1.7.3"
 junit = "4.13.2"
 kotlin = "2.1.0"
 java = "17"
+javaConvention = "17"
 
 minSdk = "24"
 targetSdk = "35"
@@ -23,7 +24,6 @@ compileSdk = "35"
 
 
 [libraries]
-
 gradleplugin-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 gradleplugin-compose = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose-multiplatform" }
 gradleplugin-composeCompiler = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "compose-multiplatform" }
@@ -42,6 +42,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+gradleplugin-base = { module = "extensions:base" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
